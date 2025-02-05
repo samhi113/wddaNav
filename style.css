@@ -145,14 +145,12 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
-        h4 {
-            text-transform: uppercase;
-            color: #777;
-            margin: 0;
-        }
     
         @media (width >= 70em) {
+            h4 { 
+                font-size: 1.5em !important;
+            }
+
             h1 {
                 font-size: 6em !important;
             }
@@ -161,11 +159,18 @@ main {
                 font-size: 2.5em !important;
             }
         }
+
+        h4 {
+            text-transform: uppercase;
+            color: #777;
+            margin: 0;
+            font-size: calc(1.5vh + 0.75vw);
+        }
     
         h1 {
             margin: 0;
             font-weight: bold;
-            font-size: calc(2vh + 5vw);
+            font-size: calc(3vh + 3.5vw);
             color: #222;
     
             b {
@@ -177,7 +182,7 @@ main {
     
         p {
             font-style: italic;
-            font-size: calc(1.5vw + 1.5vh);
+            font-size: calc(1vw + 2.5vh);
             color: #222;
         }
     }
@@ -187,10 +192,14 @@ main {
         padding: 5vw;
 
         background-color: #222;
+        color: #ddd;
 
         h1 {
-            color: #ddd;
             text-transform: uppercase;
+            font-size: 2.5em;
+        }
+
+        p {
             font-size: 1.5em;
         }
     }
